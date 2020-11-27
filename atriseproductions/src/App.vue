@@ -1,30 +1,23 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
+  <TheNav />
   <router-view/>
+  <footer>
+    <a href="https://www.facebook.com/CNYAtRise/" class="transparent"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/cnyatrise/" class="transparent"><i class="fab fa-instagram"></i></a>
+    <p>&copy; 2020 At Rise Productions. All rights reserved.</p>
+  </footer>
 </template>
 
+<script>
+import TheNav from './components/TheNav.vue'
+export default {
+  components: { 
+    TheNav 
+  },
+}
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+  @import './assets/css/custom.css'
 
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>
