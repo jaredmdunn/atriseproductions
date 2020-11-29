@@ -4,15 +4,20 @@
     <div class="d-flex align-items-end">
       <h1 class="text-blue m-0 ml-2 fw-bold">At Rise Productions</h1>
     </div>
+    <aside class="col text-right p-2">
+      <a href="mailto:cnyatrise@gmail.com" class="p-1">cnyatrise@gmail.com</a><br>
+      <a href="https://www.facebook.com/CNYAtRise/"><i class="fab fa-facebook-square fs-5 p-1"></i></a>
+      <a href="https://www.instagram.com/cnyatrise/"><i class="fab fa-instagram fs-5 p-1"></i></a>
+    </aside>
   </header>
   <TheNav />
-  <main class="bg-white mx-3 p-2">
+  <main class="bg-white mx-3 pb-5">
     <router-view/>
   </main>
-  <footer class="fixed-bottom bg-yellow d-flex">
-    <a href="https://www.facebook.com/CNYAtRise/"><i class="fab fa-facebook-f"></i></a>
-    <a href="https://www.instagram.com/cnyatrise/"><i class="fab fa-instagram"></i></a>
-    <p>&copy; 2020 At Rise Productions. All rights reserved.</p>
+  <footer class="fixed-bottom bg-yellow d-flex p-2">
+    <a href="https://www.facebook.com/CNYAtRise/"><i class="fab fa-facebook-square fs-5 p-1"></i></a>
+    <a href="https://www.instagram.com/cnyatrise/"><i class="fab fa-instagram fs-5 p-1"></i></a>
+    <p class="col text-right m-0">&copy; 2020 At Rise Productions. All rights reserved.</p>
   </footer>
 </template>
 
@@ -21,11 +26,15 @@ import TheNav from './components/TheNav.vue'
 export default {
   components: { 
     TheNav 
-  },
+  }
 }
 </script>
 
-<style>
-  @import './assets/css/custom.css'
+<style scoped>
+  @import './assets/css/custom.css';
+
+  h1 {
+    font-size: 3rem;
+  }
 
 </style>
