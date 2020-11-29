@@ -10,13 +10,16 @@
             <router-link class="nav-link" to="/">Home</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://mkt.com/atrise">Tickets</a>
+            <a v-if="ticketsActive" class="nav-link" href="https://mkt.com/atrise">Tickets</a>
+            <a v-else class="nav-link" data-toggle="tooltip" title="Tickets are currently unavailable.">Tickets</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="events-dropdown" role="button" data-toggle="dropdown" aria-expanded="false">Events</a>
+            <ul class="dropdown-menu text-center text-sm-left bg-light-orange mt-0 border-0" aria-labelledby="events-dropdown">
+              <li v-for="event in events" :key="event.id"><router-link class="dropdown-item" :to="'/events/' + event.slug">{{ event.title }}</router-link></li>
+            </ul>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/events">Events</router-link> 
-          </li>
-          <li class="nav-item">
-            <router-link class="nav-link" to="/get-involved">Get Involved</router-link> 
+            <router-link class="nav-link" to="/get-involved">Get Involved</router-link>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://mkt.com/atrise2">Support</a>
@@ -31,8 +34,16 @@
 </template>
 
 <script>
-export default {
+import eventsArray from '../assets/js/events';
 
+export default {
+  name: 'TheNav',
+  data() {
+    return {
+      events: eventsArray.reverse(),
+      ticketsActive: false,
+    }
+  }
 }
 </script>
 
