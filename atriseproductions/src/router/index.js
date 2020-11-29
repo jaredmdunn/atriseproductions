@@ -13,7 +13,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    component: () => import(/* webpackChunkName: "About" */ '../views/About.vue')
   },
   {
     path: '/events/:slug',
@@ -21,7 +21,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Event.vue')
+    component: () => import(/* webpackChunkName: "Event" */ '../views/Event.vue')
   },
   {
     path: '/get-involved',
@@ -29,13 +29,28 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/GetInvolved.vue')
+    component: () => import(/* webpackChunkName: "GetInvolved" */ '../views/GetInvolved.vue')
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    name: '404Page',
+    component: () => import(/* webpackChunkName: "404Page" */ '../views/404Page.vue')
   }
 ]
 
 const router = createRouter({
   history: createWebHashHistory(),
-  routes
+  routes,
+  scrollBehavior(to) {
+    if (to.hash) {
+      return {
+        el: to.hash,
+        behavior: 'smooth'
+      }
+    } else {
+      return { top: 0 };
+    }
+  },
 })
 
 export default router
