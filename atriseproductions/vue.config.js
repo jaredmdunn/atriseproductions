@@ -1,4 +1,4 @@
 module.exports = {
-  publicPath: 'http://atriseproductions.com/atriseproductions.com',
+  publicPath: '/',
   outputDir: '../docs',
 }
