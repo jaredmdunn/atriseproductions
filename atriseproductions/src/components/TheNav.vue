@@ -38,15 +38,25 @@ import eventsArray from '../assets/js/events';
 
 export default {
   name: 'TheNav',
+  props: {
+    ticketsActive: Boolean
+  },
   data() {
     return {
       events: eventsArray.reverse(),
-      ticketsActive: false,
     }
   }
 }
 </script>
 
-<style>
+<style scoped>
+  /* nav li.nav-item a.nav-link {
+    color: blue;
+    font-weight: bold;
+  }
+  nav li.nav-item a.router-link-active {
+    color: red;
+    font-weight: bold;
+  } */
 
 </style>
