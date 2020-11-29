@@ -10,14 +10,14 @@
       <a href="https://www.instagram.com/cnyatrise/"><i class="fab fa-instagram fs-5 p-1"></i></a>
     </aside>
   </header>
-  <TheNav />
-  <main class="bg-white mx-3 pb-5">
+  <TheNav :ticketsActive="ticketsActive" />
+  <main class="bg-white mx-3 pb-5 p-0">
     <router-view/>
   </main>
   <footer class="fixed-bottom bg-yellow d-flex p-2">
     <a href="https://www.facebook.com/CNYAtRise/"><i class="fab fa-facebook-square fs-5 p-1"></i></a>
     <a href="https://www.instagram.com/cnyatrise/"><i class="fab fa-instagram fs-5 p-1"></i></a>
-    <p class="col text-right m-0">&copy; 2020 At Rise Productions. All rights reserved.</p>
+    <p class="col text-right m-0">&copy; {{ year }} At Rise Productions. All rights reserved.</p>
   </footer>
 </template>
 
@@ -26,6 +26,17 @@ import TheNav from './components/TheNav.vue'
 export default {
   components: { 
     TheNav 
+  },
+  data() {
+    return {
+      ticketsActive: false,
+    }
+  },
+  computed: {
+    year() {
+      const now = new Date();
+      return now.getFullYear();
+    }
   }
 }
 </script>
