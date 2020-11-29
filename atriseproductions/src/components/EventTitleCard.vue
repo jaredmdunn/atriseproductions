@@ -1,5 +1,5 @@
 <template>
-  <section class="container-fluid pb-2">
+  <section class="pb-2 mx-4">
     <div class="row">
       <div class="col">
         <h1 class="text-blue text-center">{{ event.title }}</h1>
