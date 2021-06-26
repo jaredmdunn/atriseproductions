@@ -15,7 +15,11 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" id="events-dropdown" role="button" data-toggle="dropdown" aria-expanded="false">Events</a>
             <ul class="dropdown-menu text-center text-sm-left bg-light-orange mt-0 border-0" aria-labelledby="events-dropdown">
-              <li v-for="event in events" :key="event.id"><router-link class="dropdown-item" :to="'/events/' + event.slug">{{ event.title }}</router-link></li>
+              <li v-for="event in events" :key="event.id">
+                <router-link class="dropdown-item" :to="'/events/' + event.slug">
+                  {{ event.title }}
+                </router-link>
+              </li>
             </ul>
           </li>
           <li class="nav-item">
@@ -34,23 +38,23 @@
 </template>
 
 <script>
-import eventsArray from '../assets/js/events';
+import eventsArray from "../assets/js/events";
 
 export default {
-  name: 'TheNav',
+  name: "TheNav",
   props: {
-    ticketsActive: Boolean
+    ticketsActive: Boolean,
   },
   data() {
     return {
       events: eventsArray.reverse(),
-    }
-  }
-}
+    };
+  },
+};
 </script>
 
 <style scoped>
-  /* nav li.nav-item a.nav-link {
+/* nav li.nav-item a.nav-link {
     color: blue;
     font-weight: bold;
   }
@@ -58,5 +62,4 @@ export default {
     color: red;
     font-weight: bold;
   } */
-
 </style>
