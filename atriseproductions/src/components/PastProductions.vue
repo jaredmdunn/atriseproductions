@@ -10,40 +10,40 @@
 </template>
 
 <script>
-import eventsArray from '../assets/js/events';
-import PastProductionCard from './PastProductionCard.vue';
+import eventsArray from "../assets/js/events";
+import PastProductionCard from "./PastProductionCard.vue";
 
 export default {
   components: { PastProductionCard },
-  name: 'PastProductions',
+  name: "PastProductions",
   data() {
     return {
-      events: eventsArray,
-    }
+      events: Array.from(eventsArray),
+    };
   },
   computed: {
     shownEvents() {
       return this.events.slice(0, 3);
-    }
+    },
   },
   methods: {
     changeProductions() {
       const firstEvent = this.events.shift();
       this.events.push(firstEvent);
-    }
+    },
   },
   mounted() {
     setInterval(this.changeProductions, 10000);
-  }
-}
+  },
+};
 </script>
 
 <style scoped>
-  .events-move {
-    transition: transform 0.8s ease;
-  }
+.events-move {
+  transition: transform 0.8s ease;
+}
 
-  .events-leave-active {
-    position: absolute;
-  }
+.events-leave-active {
+  position: absolute;
+}
 </style>
