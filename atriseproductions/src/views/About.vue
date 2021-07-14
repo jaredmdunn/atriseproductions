@@ -26,10 +26,9 @@
         but our first show was not until spring of 2018 when we put on 
         <em>You're A Good Man, Charlie Brown</em> with the help of 
         <a href="https://www.facebook.com/theappleseedcommunity/">Appleseed Community</a>
-        and <a href="http://alcsyracuse.org/">Atonement Ministries</a>. Our team of seventeen 
+        and <a href="http://alcsyracuse.org/">Atonement Ministries</a>. It was directed by our Founding Artistic Director, Jared Dunn, and music directed by our Founding Music Director, Nancy O’Connor. Our team of seventeen 
         young people ranging from 12 to 18 years old made up the cast, crew, pit, and creative team for the 
-        production. We had four wonderful performances, and for this production our Founding Artistic Director, 
-        Jared Dunn, received a SALT (Syracuse Area Live Theater) award nomination for Best Director of a 
+        production. We had four wonderful performances, and for this production Jared Dunn received a SALT (Syracuse Area Live Theater) award nomination for Best Director of a 
         Musical in community theater.</p>
       </div>
     </div>
