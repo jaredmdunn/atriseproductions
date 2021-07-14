@@ -84,7 +84,7 @@
       </div>
       <div class="col d-flex flex-column justify-content-center">
         <p><em>Teenage Nobodies</em>, a cabaret of original songs
-        written by O'Connor & Dunn was performed at on August 18th at the Catherine
+        written by O'Connor & Dunn, was performed on August 18, 2019 at the Catherine
       Cummings Theatre. We raised funds to start the Blake Lucas Memorial 
       Music/Theater Scholarship Fund.</p>
       </div>
