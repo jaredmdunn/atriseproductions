@@ -51,7 +51,7 @@
         <p>That same summer, Jared Dunn and Nancy O'Connor had been writing songs together for an 
         <span class="text-blue">At Rise Productions</span> summer cabaret performance of original work. 
         They had just started rehearsals 
-        when Blake passed away. Blake was a close of friend of Jared and Nancy, 
+        when Blake passed away. Blake was a close friend of Jared and Nancy, 
         and with the permission of Blake's family, we turned the cabaret into a memorial for him 
         and a fundraiser for his family. We performed the cabaret after the funeral service. 
         Eighteen students, including the entire cast of <em>You're A Good Man, Charlie Brown</em>, performed eleven 
