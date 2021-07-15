@@ -26,10 +26,9 @@
         but our first show was not until spring of 2018 when we put on 
         <em>You're A Good Man, Charlie Brown</em> with the help of 
         <a href="https://www.facebook.com/theappleseedcommunity/">Appleseed Community</a>
-        and <a href="http://alcsyracuse.org/">Atonement Ministries</a>. Our team of seventeen 
+        and <a href="http://alcsyracuse.org/">Atonement Ministries</a>. It was directed by our Founding Artistic Director, Jared Dunn, and music directed by our Founding Music Director, Nancy O’Connor. Our team of seventeen 
         young people ranging from 12 to 18 years old made up the cast, crew, pit, and creative team for the 
-        production. We had four wonderful performances, and for this production our Founding Artistic Director, 
-        Jared Dunn, received a SALT (Syracuse Area Live Theater) award nomination for Best Director of a 
+        production. We had four wonderful performances, and for this production Jared Dunn received a SALT (Syracuse Area Live Theater) award nomination for Best Director of a 
         Musical in community theater.</p>
       </div>
     </div>
@@ -38,7 +37,7 @@
         <p>Tragedy struck when Blake Lucas, who played Linus in <em>You're A Good Man, Charlie Brown</em> passed away suddenly and unexpectedly during the summer of 2018. Blake was much loved by the entire At Rise community for his sense of humor and kind spirit. He will be forever missed.</p>
       </div>
       <div class="col d-flex flex-column justify-content-center text-center">
-        <img src="@/assets/images/blake.jpg" class="img-thumbnail" alt="Blake">
+        <img src="@/assets/images/blake.jpg" class="img-thumbnail mx-auto" alt="Blake">
       </div>
     </div>
     <div class="row flex-column flex-md-row mx-lg-5">
@@ -51,7 +50,7 @@
         <p>That same summer, Jared Dunn and Nancy O'Connor had been writing songs together for an 
         <span class="text-blue">At Rise Productions</span> summer cabaret performance of original work. 
         They had just started rehearsals 
-        when Blake passed away. Blake was a close of friend of Jared and Nancy, 
+        when Blake passed away. Blake was a close friend of Jared and Nancy, 
         and with the permission of Blake's family, we turned the cabaret into a memorial for him 
         and a fundraiser for his family. We performed the cabaret after the funeral service. 
         Eighteen students, including the entire cast of <em>You're A Good Man, Charlie Brown</em>, performed eleven 
@@ -84,7 +83,7 @@
       </div>
       <div class="col d-flex flex-column justify-content-center">
         <p><em>Teenage Nobodies</em>, a cabaret of original songs
-        written by O'Connor & Dunn was performed at on August 18th at the Catherine
+        written by O'Connor & Dunn, was performed on August 18, 2019 at the Catherine
       Cummings Theatre. We raised funds to start the Blake Lucas Memorial 
       Music/Theater Scholarship Fund.</p>
       </div>
@@ -112,13 +111,13 @@
 </template>
 
 <style scoped>
-  img {
-    transform: scale(1);
-    transition: transform 0.8s;
-  }
+img {
+  transform: scale(1);
+  transition: transform 0.8s;
+}
 
-  a img:hover {
-    transform: scale(0.9);
-    transition: transform 0.8s;
-  }
+a img:hover {
+  transform: scale(0.9);
+  transition: transform 0.8s;
+}
 </style>
