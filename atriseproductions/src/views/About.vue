@@ -37,7 +37,7 @@
         <p>Tragedy struck when Blake Lucas, who played Linus in <em>You're A Good Man, Charlie Brown</em> passed away suddenly and unexpectedly during the summer of 2018. Blake was much loved by the entire At Rise community for his sense of humor and kind spirit. He will be forever missed.</p>
       </div>
       <div class="col d-flex flex-column justify-content-center text-center">
-        <img src="@/assets/images/blake.jpg" class="img-thumbnail" alt="Blake">
+        <img src="@/assets/images/blake.jpg" class="img-thumbnail mx-auto" alt="Blake">
       </div>
     </div>
     <div class="row flex-column flex-md-row mx-lg-5">
@@ -111,13 +111,13 @@
 </template>
 
 <style scoped>
-  img {
-    transform: scale(1);
-    transition: transform 0.8s;
-  }
+img {
+  transform: scale(1);
+  transition: transform 0.8s;
+}
 
-  a img:hover {
-    transform: scale(0.9);
-    transition: transform 0.8s;
-  }
+a img:hover {
+  transform: scale(0.9);
+  transition: transform 0.8s;
+}
 </style>
